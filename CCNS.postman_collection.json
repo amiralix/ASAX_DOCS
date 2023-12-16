@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "5251a0dc-3713-4058-8dc7-3f24bfd4af41",
+		"name": "CCNS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2163601",
+		"_collection_link": "https://asa-alpha.postman.co/workspace/Asa-Workspace~5823041c-047c-421a-812a-dd7eb790a589/collection/2163601-5251a0dc-3713-4058-8dc7-3f24bfd4af41?action=share&source=collection_link&creator=2163601"
+	},
+	"item": [
+		{
+			"name": "SendMessageV2",
+			"item": [
+				{
+					"name": "CCNS SendMessageV2 EcoSystemNewCustomerUsernameAndPasswordEventV2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "default"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/ICcnsService/SendMessagev2",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <s:Body>\r\n    <SendMessagev2 xmlns=\"http://tempuri.org/\">\r\n      <evnts xmlns:d4p1=\"http://schemas.datacontract.org/2004/07/CCNS.Gateway.EventV2\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n        <d4p1:BaseEventV2 i:type=\"d4p1:EcoSystemNewCustomerUsernameAndPasswordEventV2\">\r\n          <d4p1:CcmsCode>8636458</d4p1:CcmsCode>\r\n          <d4p1:ConventionCode>1-8636458-1</d4p1:ConventionCode>\r\n          <d4p1:OrganisationUserId>1</d4p1:OrganisationUserId>\r\n          <d4p1:_channeList xmlns:d6p1=\"http://schemas.datacontract.org/2004/07/CCNS.Gateway.ChannelData\">\r\n            <d6p1:ChannelData i:type=\"d6p1:SmsData\">\r\n              <d6p1:CellPhone>09169853411</d6p1:CellPhone>\r\n            </d6p1:ChannelData>\r\n          </d4p1:_channeList>\r\n          <d4p1:CustomerTitle>مشتری</d4p1:CustomerTitle>\r\n          <d4p1:Password>123</d4p1:Password>\r\n          <d4p1:UserName>یوزرنیم</d4p1:UserName>\r\n        </d4p1:BaseEventV2>\r\n      </evnts>\r\n    </SendMessagev2>\r\n  </s:Body>\r\n</s:Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ccnsBaseUrl}}/CcnsService.svc",
+							"host": [
+								"{{ccnsBaseUrl}}"
+							],
+							"path": [
+								"CcnsService.svc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CCNS SendMessageV2 OptionMargineCallEventV2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "default"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/ICcnsService/SendMessagev2",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <s:Body>\r\n    <SendMessagev2 xmlns=\"http://tempuri.org/\">\r\n      <evnts xmlns:d4p1=\"http://schemas.datacontract.org/2004/07/CCNS.Gateway.EventV2\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n        <d4p1:BaseEventV2 i:type=\"d4p1:OptionMargineCallEventV2\">\r\n          <d4p1:CcmsCode>8636458</d4p1:CcmsCode>\r\n          <d4p1:ConventionCode>8636458</d4p1:ConventionCode>\r\n          <d4p1:OrganisationUserId>1</d4p1:OrganisationUserId>\r\n          <d4p1:_channeList xmlns:d6p1=\"http://schemas.datacontract.org/2004/07/CCNS.Gateway.ChannelData\">\r\n            <d6p1:ChannelData i:type=\"d6p1:SmsData\">\r\n              <d6p1:CellPhone>09169853411</d6p1:CellPhone>\r\n            </d6p1:ChannelData>\r\n          </d4p1:_channeList>\r\n          <d4p1:CustomerCode>8636458</d4p1:CustomerCode>\r\n          <d4p1:CustomerTitle>کاستومرتایتل</d4p1:CustomerTitle>\r\n        </d4p1:BaseEventV2>\r\n      </evnts>\r\n    </SendMessagev2>\r\n  </s:Body>\r\n</s:Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ccnsBaseUrl}}/CcnsService.svc",
+							"host": [
+								"{{ccnsBaseUrl}}"
+							],
+							"path": [
+								"CcnsService.svc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CCNS SendMessageV2 IntroduceAgahDerivativeServicesEventV2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "default"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/ICcnsService/SendMessagev2",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <s:Body>\r\n    <SendMessagev2 xmlns=\"http://tempuri.org/\">\r\n      <evnts xmlns:d4p1=\"http://schemas.datacontract.org/2004/07/CCNS.Gateway.EventV2\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n        <d4p1:BaseEventV2 i:type=\"d4p1:IntroduceAgahDerivativeServicesEventV2\">\r\n          <d4p1:CcmsCode>8636458</d4p1:CcmsCode>\r\n          <d4p1:ConventionCode>1-8636458-1</d4p1:ConventionCode>\r\n          <d4p1:OrganisationUserId>1</d4p1:OrganisationUserId>\r\n          <d4p1:_channeList xmlns:d6p1=\"http://schemas.datacontract.org/2004/07/CCNS.Gateway.ChannelData\">\r\n            <d6p1:ChannelData i:type=\"d6p1:SmsData\">\r\n              <d6p1:CellPhone>09169853411</d6p1:CellPhone>\r\n            </d6p1:ChannelData>\r\n          </d4p1:_channeList>\r\n        </d4p1:BaseEventV2>\r\n      </evnts>\r\n    </SendMessagev2>\r\n  </s:Body>\r\n</s:Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ccnsBaseUrl}}/CcnsService.svc",
+							"host": [
+								"{{ccnsBaseUrl}}"
+							],
+							"path": [
+								"CcnsService.svc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CCNS SendMessageV2 FutureMargineCallEventV2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "default"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/ICcnsService/SendMessagev2",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <s:Body>\r\n    <SendMessagev2 xmlns=\"http://tempuri.org/\">\r\n      <evnts xmlns:d4p1=\"http://schemas.datacontract.org/2004/07/CCNS.Gateway.EventV2\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n        <d4p1:BaseEventV2 i:type=\"d4p1:FutureMargineCallEventV2\">\r\n          <d4p1:CcmsCode>8636458</d4p1:CcmsCode>\r\n          <d4p1:ConventionCode>1-8636458-1</d4p1:ConventionCode>\r\n          <d4p1:OrganisationUserId>1</d4p1:OrganisationUserId>\r\n          <d4p1:_channeList xmlns:d6p1=\"http://schemas.datacontract.org/2004/07/CCNS.Gateway.ChannelData\">\r\n            <d6p1:ChannelData i:type=\"d6p1:SmsData\">\r\n              <d6p1:CellPhone>09169853411</d6p1:CellPhone>\r\n            </d6p1:ChannelData>\r\n          </d4p1:_channeList>\r\n          <d4p1:CustomerCode>8636458</d4p1:CustomerCode>\r\n          <d4p1:CustomerTitle>کاستومرتایتل</d4p1:CustomerTitle>\r\n        </d4p1:BaseEventV2>\r\n      </evnts>\r\n    </SendMessagev2>\r\n  </s:Body>\r\n</s:Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ccnsBaseUrl}}/CcnsService.svc",
+							"host": [
+								"{{ccnsBaseUrl}}"
+							],
+							"path": [
+								"CcnsService.svc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
